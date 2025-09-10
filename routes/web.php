@@ -10,8 +10,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/produtos', [ProdutoController::class, 'index']);
+
 Route::get('/produtos/{id}', [ProdutoController::class, 'show']);
 
+Route::get('/sobre', [UserController::class, 'sobre']);
 
 Route::get("/login", [UserController::class, 'login']);
 Route::get("/cadastro", [UserController::class, 'cadastro']);

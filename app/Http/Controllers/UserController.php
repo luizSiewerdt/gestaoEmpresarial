@@ -14,4 +14,9 @@ class UserController extends Controller
     public function cadastro(): View {
         return view("pages.cadastro");
     }
+
+    public function sobre(): View {
+        return view("pages.sobre");
+    }
+
 }

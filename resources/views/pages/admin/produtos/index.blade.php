@@ -9,7 +9,7 @@
     <div class="row">
         @foreach($produtos ?? [] as $produto)
             <div class="col-md-4">
-                @include('components.product-card', ['produto' => $produto])
+                @include('components.card-produto', ['produto' => $produto])
             </div>
         @endforeach
     </div>

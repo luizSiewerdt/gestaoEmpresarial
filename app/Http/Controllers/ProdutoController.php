@@ -16,7 +16,6 @@ class ProdutoController extends Controller
     ];
 
     public function index(): View {
-
         return view("pages.produtos.index", ['produtos' => $this->produtos]);
     }
 

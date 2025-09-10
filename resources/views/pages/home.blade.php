@@ -3,6 +3,8 @@
 @section('title', 'home')
 
 @section('content')
-    <h1>HOME</h1>
-    @include("components.botao", ['text' => 'legal'])
+
+<div class="container mt-4">
+    <h1>Bem-Vindo</h1>
+</div>
 @endsection
