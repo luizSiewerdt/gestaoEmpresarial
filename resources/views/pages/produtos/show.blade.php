@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $produto->nome ?? 'Produto')
+@section('title', $produto["nome"] ?? 'Produto')
 
 @section('content')
 <div class="container mt-4">

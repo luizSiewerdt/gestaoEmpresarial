@@ -57,11 +57,10 @@ class AdminController extends Controller
     }
 
     public function find_product(string $slug): View {
-        $produto = [
-            'nome' => str_replace('-', ' ', ucfirst($slug)),
-            'descricao' => 'Descrição do produto '.$slug,
-            'preco' => rand(50, 500)
-        ];
+        $produto = collect($this->products)
+            ->first(function ($produto) use ($slug) {
+                return $produto['id'] == $slug || str_contains($produto['nome'], $slug);
+            });
 
         return view("pages.admin.produtos.show", compact('produto'));
     }

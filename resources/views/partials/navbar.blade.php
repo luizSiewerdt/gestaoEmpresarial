@@ -30,6 +30,7 @@
                         <li><a class="dropdown-item" href="{{ url('/admin/produtos') }}">Produtos</a></li>
                         <li><a class="dropdown-item" href="{{ url('/admin/fornecedores') }}">Fornecedores</a></li>
                         <li><a class="dropdown-item" href="{{ url('/admin/clientes') }}">Clientes</a></li>
+                        <li><a class="dropdown-item" href="{{ url('/admin/login') }}">Logar</a></li>
                     </ul>
                 </li>
 
