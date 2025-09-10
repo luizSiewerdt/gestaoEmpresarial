@@ -9,7 +9,7 @@
     <ul class="list-group">
         @foreach($fornecedores ?? [] as $fornecedor)
             <li class="list-group-item">
-                {{ $fornecedor->nome ?? 'Fornecedor' }}
+                {{ $fornecedor["nome"] ?? 'Fornecedor' }}
             </li>
         @endforeach
     </ul>

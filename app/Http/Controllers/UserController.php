@@ -8,11 +8,10 @@ use Illuminate\Routing\Controller;
 class UserController extends Controller
 {
     public function login(): View {
-        return view("login");
+        return view("pages.login");
     }
 
-
     public function cadastro(): View {
-        return view("cadastro");
+        return view("pages.cadastro");
     }
 }

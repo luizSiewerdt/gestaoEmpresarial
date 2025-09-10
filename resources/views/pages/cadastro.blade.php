@@ -19,7 +19,7 @@
             <label for="senha" class="form-label">Senha</label>
             <input type="password" class="form-control" id="senha">
         </div>
-        <x-button class="btn-success" type="submit">Cadastrar</x-button>
+        <x-botao text="Cadastrar" class="btn-success" type="submit"/>
     </form>
 </div>
 @endsection

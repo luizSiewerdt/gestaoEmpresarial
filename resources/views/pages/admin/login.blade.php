@@ -15,7 +15,7 @@
             <label for="senha" class="form-label">Senha</label>
             <input type="password" class="form-control" id="senha">
         </div>
-        <x-button class="btn-primary" type="submit">Entrar</x-button>
+        <x-botao text="Entrar" class="btn-primary" type="submit" />
     </form>
 </div>
 @endsection
