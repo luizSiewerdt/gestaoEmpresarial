@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Contracts\View\View;
+use Illuminate\Routing\Controller;
+
+class UserController extends Controller
+{
+    public function login(): View {
+        return view("login");
+    }
+
+
+    public function cadastro(): View {
+        return view("cadastro");
+    }
+}
